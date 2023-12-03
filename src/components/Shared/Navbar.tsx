@@ -1,4 +1,3 @@
-import { PhoneCall } from "lucide-react";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -67,7 +66,7 @@ const Navbar = () => {
             />
           </a>
         </div>
-        <div className="navbar-end hidden lg:flex">
+        <div className="navbar-end hidden lg:flex z-10">
           <ul className="menu menu-horizontal px-1">
             <li>
               <details>
@@ -123,8 +122,22 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex items-center gap-2 ml-4">
-            <PhoneCall />
-            <span className="text-lg font-medium">514-227-4647</span>
+            <button className="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>

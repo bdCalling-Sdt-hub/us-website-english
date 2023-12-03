@@ -25,7 +25,6 @@ const config: Config = {
         },
       },
       "dark",
-      "cupcake",
     ],
   },
 };

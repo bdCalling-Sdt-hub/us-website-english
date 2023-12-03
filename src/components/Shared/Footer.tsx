@@ -16,7 +16,7 @@ const Footer = () => {
       <footer className="footer py-12 text-base-content container mx-auto">
         <nav>
           <Image src="/images/logo2.png" alt="logo" width={300} height={200} />
-          <p className="text-lg">
+          <p className="text-lg my-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             <br /> Neque, numquam. Lorem ipsum dolor sit amet consectetur
             adipisicing elit.
@@ -80,6 +80,29 @@ const Footer = () => {
               7900 boul. Taschereau A-206 Brossard,
               <br /> Quebec, Canada J4X 1C2
             </p>
+          </div>
+          <h3 className="my-2 text-xl">Payment Method</h3>
+          <div className="flex gap-2">
+            <div className="bg-white rounded-md px-2 py-1 w-[200px] text-center">
+              <a href="#">
+                <Image
+                  src="/images/payment1.png"
+                  alt="logo"
+                  width={500}
+                  height={500}
+                />
+              </a>
+            </div>
+            <div className="bg-white rounded-md px-2 py-1 w-[200px] text-center">
+              <a href="#">
+                <Image
+                  src="/images/payment2.png"
+                  alt="logo"
+                  width={500}
+                  height={500}
+                />
+              </a>
+            </div>
           </div>
         </nav>
       </footer>
