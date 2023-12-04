@@ -12,8 +12,8 @@ import Icon from "../util/Icon";
 
 const Footer = () => {
   return (
-    <div className="bg-base-200">
-      <footer className="footer py-12 text-base-content container mx-auto">
+    <div className="bg-[#191e24] text-gray-400">
+      <footer className="footer py-12 text-base-content container mx-auto px-3 lg:px-0">
         <nav>
           <Image src="/images/logo2.png" alt="logo" width={300} height={200} />
           <p className="text-lg my-3">
@@ -58,7 +58,7 @@ const Footer = () => {
             <Icon>
               <Mail color="#e8e3e3" />
             </Icon>
-            <p className="text-lg">example@gmail.com</p>
+            <p className="text-lg">info@vodalink.com</p>
           </div>
           <div className="flex items-center gap-2">
             <Icon>
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
           <h3 className="my-2 text-xl">Payment Method</h3>
           <div className="flex gap-2">
-            <div className="bg-white rounded-md px-2 py-1 w-[200px] text-center">
+            <div className="bg-white rounded-md px-2 py-1 lg:w-[200px] text-center">
               <a href="#">
                 <Image
                   src="/images/payment1.png"
@@ -93,7 +93,7 @@ const Footer = () => {
                 />
               </a>
             </div>
-            <div className="bg-white rounded-md px-2 py-1 w-[200px] text-center">
+            <div className="bg-white rounded-md px-2 py-1 lg:w-[200px] text-center">
               <a href="#">
                 <Image
                   src="/images/payment2.png"
@@ -106,7 +106,7 @@ const Footer = () => {
           </div>
         </nav>
       </footer>
-      <div className="bg-base-200">
+      <div className="bg-[#191e24]">
         <footer className="footer px-10 py-6 border-t text-base-content border-base-300 container mx-auto">
           <aside className="items-center grid-flow-col">
             <p>&copy; 2022 Vodalink Inc. All rights reserved.</p>

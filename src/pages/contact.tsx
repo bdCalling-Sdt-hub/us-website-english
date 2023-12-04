@@ -1,10 +1,19 @@
 import RootLayout from "@/components/Layouts/RootLayout";
+import Banner from "@/components/UI/Contact/Banner";
+import ContactForm from "@/components/UI/Contact/ContactForm";
+import ContactType from "@/components/UI/Contact/ContactType";
+import BreadCrumb from "@/components/util/BreadCrumb";
 import { ReactElement } from "react";
 
 const ContactPage = () => {
   return (
-    <div>
-      <h1>Contact Page</h1>
+    <div className="container mx-auto">
+      <div className="mx-28">
+        <BreadCrumb title="Contact" />
+        <Banner />
+        <ContactType />
+        <ContactForm />
+      </div>
     </div>
   );
 };

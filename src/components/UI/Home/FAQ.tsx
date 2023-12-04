@@ -31,7 +31,7 @@ const FAQ = () => {
     },
   ];
   return (
-    <div className=" mx-28 mb-16">
+    <div className="mx-3 lg:mx-28 mb-16">
       <HeaderText>FAQ</HeaderText>
       {faqQuestions.map((ques, index) => (
         <FaqCard key={index} ques={ques} />

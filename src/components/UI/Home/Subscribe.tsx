@@ -1,11 +1,11 @@
 const Subscribe = () => {
   return (
-    <div className="mx-28 mt-14">
-      <div className="card w-full bg-neutral text-neutral-content py-8">
+    <div className="mx-3 lg:mx-28 mt-14">
+      <div className="card w-full bg-[#2a323c] text-neutral-content py-8">
         <div className="card-body">
-          <div className="flex items-center justify-between">
+          <div className="lg:flex items-center justify-between">
             <div className="space-y-3">
-              <h2 className="text-4xl font-bold">
+              <h2 className="text-4xl font-bold text-gray-400">
                 Subscribe to the newsletter
               </h2>
               <p className="text-xl">

@@ -20,8 +20,9 @@ const config: Config = {
     themes: [
       {
         customTheme: {
-          primary: "#fff",
+          primary: "#7480ff",
           secondary: "#1d232a",
+          darkWhite: "#a6adbb",
         },
       },
       "dark",

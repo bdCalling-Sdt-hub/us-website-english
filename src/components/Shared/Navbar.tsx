@@ -1,11 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+
   return (
     <div className="bg-primary text-white">
       <div className="navbar container mx-auto">
         <div className="navbar-start">
-          <div className="dropdown">
+          <div className="dropdown" onClick={toggleDropdown}>
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -22,81 +30,76 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <a>Shop</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Packages</a>
-                  </li>
-                  <li>
-                    <a>Television</a>
-                  </li>
-                  <li>
-                    <a>Internet</a>
-                  </li>
-                  <li>
-                    <a>Phone</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Packages</a>
-              </li>
-              <li>
-                <a>Contact</a>
-              </li>
-              <li>
-                <a>Support</a>
-              </li>
-              <li>
-                <a>English</a>
-              </li>
-            </ul>
+            {isDropdownOpen && (
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3  p-2 shadow bg-[#191e24] text-gray-400 rounded-box w-52 z-10"
+              >
+                <li>
+                  <a>Shop</a>
+                  <ul className="p-2">
+                    <li className="text-md">
+                      <a>Packages</a>
+                    </li>
+                    <li className="text-md">
+                      <a>Television</a>
+                    </li>
+                    <li className="text-md">
+                      <a>Internet</a>
+                    </li>
+                    <li className="text-md">
+                      <a>Phone</a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="text-md">
+                  <a>Packages</a>
+                </li>
+                <li className="text-md">
+                  <a>Contact</a>
+                </li>
+                <li className="text-md">
+                  <a>Support</a>
+                </li>
+                <li className="text-2xl">
+                  <a>English</a>
+                </li>
+              </ul>
+            )}
           </div>
-          <a href="#">
-            <Image
-              src="/images/logo2.png"
-              alt="logo"
-              width={300}
-              height={200}
-            />
-          </a>
+          <Image src="/images/logo2.png" alt="logo" width={300} height={200} />
         </div>
         <div className="navbar-end hidden lg:flex z-10">
           <ul className="menu menu-horizontal px-1">
             <li>
               <details>
-                <summary className="text-lg">Shop</summary>
+                <summary className="">Magazines</summary>
                 <ul className=" z-[1] menu p-2 w-52">
-                  <li className="text-lg">
-                    <a>Packages</a>
+                  <li className="">
+                    <Link href="/packages">Packages</Link>
                   </li>
-                  <li className="text-lg">
-                    <a>Television</a>
+                  <li>
+                    <Link href="/television">Television</Link>
                   </li>
-                  <li className="text-lg">
+                  <li>
                     <a>Internet</a>
                   </li>
-                  <li className="text-lg">
+                  <li>
                     <a>Phone</a>
                   </li>
                 </ul>
               </details>
             </li>
-            <li className="text-lg">
-              <a>Packages</a>
+            <li>
+              <Link href="/packages">Packages</Link>
             </li>
-            <li className="text-lg">
-              <a>Contact</a>
+            <li>
+              <Link href="/contact">Contact</Link>
             </li>
-            <li className="text-lg">
-              <a>Support</a>
+            <li>
+              <Link href="/support">Support</Link>
             </li>
-            <li className="text-lg">
+            <li>
               <a>English</a>
             </li>
           </ul>
@@ -105,13 +108,13 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-sm text-orange-600 m-1"
+              className="btn btn-sm bg-[#191e24]  text-orange-600 m-1"
             >
               PROMO
             </div>
             <ul
               tabIndex={0}
-              className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+              className="dropdown-content z-[1] menu p-2 shadow bg-[#191e24] rounded-box w-52"
             >
               <li>
                 <a>CURRENT PROMOTION</a>

@@ -20,12 +20,17 @@ const Feedback = () => {
   };
 
   return (
-    <div className="mx-48 mt-36">
+    <div className="mx-3 lg:mx-44 mt-36">
       <HeaderText>What you think of our services</HeaderText>
       <Swiper
         modules={[Pagination, A11y, Autoplay, Navigation]}
         spaceBetween={20}
-        slidesPerView={2}
+        slidesPerView={1}
+        breakpoints={{
+          690: {
+            slidesPerView: 2,
+          },
+        }}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
@@ -47,7 +52,7 @@ const Feedback = () => {
                 />
               </div>
               <div>
-                <p>{feedback?.feedback}</p>
+                <p className="text-gray-400">{feedback?.feedback}</p>
               </div>
             </div>
           </SwiperSlide>
