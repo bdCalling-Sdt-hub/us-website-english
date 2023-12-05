@@ -1,3 +1,4 @@
+import { MessagesSquare, Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -33,16 +34,16 @@ const Navbar = () => {
             {isDropdownOpen && (
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3  p-2 shadow bg-[#191e24] text-gray-400 rounded-box w-52 z-10"
+                className="menu menu-sm dropdown-content mt-3  p-2 shadow bg-[#191e24] text-gray-400 rounded-box w-60 z-10"
               >
                 <li>
-                  <a>Shop</a>
+                  <a>Magazines</a>
                   <ul className="p-2">
-                    <li className="text-md">
-                      <a>Packages</a>
+                    <li className="">
+                      <Link href="/packages">Packages</Link>
                     </li>
-                    <li className="text-md">
-                      <a>Television</a>
+                    <li>
+                      <Link href="/television">Television</Link>
                     </li>
                     <li className="text-md">
                       <a>Internet</a>
@@ -53,17 +54,30 @@ const Navbar = () => {
                   </ul>
                 </li>
                 <li className="text-md">
-                  <a>Packages</a>
+                  <Link href="/packages">Packages</Link>
                 </li>
                 <li className="text-md">
-                  <a>Contact</a>
+                  <Link href="/contact">Contact</Link>
                 </li>
                 <li className="text-md">
-                  <a>Support</a>
+                  <Link href="/support">Support</Link>
                 </li>
                 <li className="text-2xl">
                   <a>English</a>
                 </li>
+                <div>
+                  <button className="btn btn-ghost btn-circle">
+                    <Search />
+                  </button>
+                  <div
+                    className="tooltip  tooltip-bottom"
+                    data-tip="Chat with an agent"
+                  >
+                    <button className="btn btn-ghost btn-circle">
+                      <MessagesSquare />
+                    </button>
+                  </div>
+                </div>
               </ul>
             )}
           </div>
@@ -74,7 +88,7 @@ const Navbar = () => {
             <li>
               <details>
                 <summary className="">Magazines</summary>
-                <ul className=" z-[1] menu p-2 w-52">
+                <ul className="bg-[#191e24] z-[1] menu p-2 w-52">
                   <li className="">
                     <Link href="/packages">Packages</Link>
                   </li>
@@ -104,7 +118,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className="dropdown dropdown-hover">
+          {/* <div className="dropdown dropdown-hover">
             <div
               tabIndex={0}
               role="button"
@@ -123,24 +137,19 @@ const Navbar = () => {
                 <a>STUDENT PROMOTION</a>
               </li>
             </ul>
-          </div>
-          <div className="flex items-center gap-2 ml-4">
+          </div> */}
+          <div>
             <button className="btn btn-ghost btn-circle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
+              <Search />
             </button>
+            <div
+              className="tooltip  tooltip-bottom"
+              data-tip="Chat with an agent"
+            >
+              <button className="btn btn-ghost btn-circle">
+                <MessagesSquare />
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const PackageTitle: React.FC<{
   description: IPackageDescription;
 }> = ({ title, description }) => {
   return (
-    <div>
+    <div className="text-gray-400">
       <h1 className="text-2xl">{title}</h1>
       <p className="text-lg">{description}</p>
     </div>

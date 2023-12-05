@@ -11,9 +11,9 @@ interface IPackage {
 const PackageCard: React.FC<{ packageItem: IPackage }> = ({ packageItem }) => {
   const { title, facilities, price } = packageItem;
   return (
-    <div className="card bg-[#2a323c] shadow-xl p-2 h-[450px]">
+    <div className="card bg-[#2a323c] shadow-xl p-2 h-[500px] lg:h-[450px]">
       <div className="card-body p-1 relative">
-        <h2 className="card-title w-full bg-primary p-3 rounded-t-lg">
+        <h2 className="card-title w-full bg-primary p-3 rounded-t-lg text-gray-300">
           {title}!
         </h2>
 
@@ -31,7 +31,9 @@ const PackageCard: React.FC<{ packageItem: IPackage }> = ({ packageItem }) => {
         ))}
 
         <div className="absolute left-0 bottom-1 w-full">
-          <h1 className="text-2xl font-bold text-center mb-4">{price}</h1>
+          <h1 className="text-2xl font-bold text-center mb-4 text-gray-400">
+            {price}
+          </h1>
           <Link href="/contact">
             <h2 className=" bg-primary p-3 rounded-b-lg text-center">
               COMMANDER

@@ -8,7 +8,7 @@ import { ReactElement } from "react";
 const ContactPage = () => {
   return (
     <div className="container mx-auto">
-      <div className="mx-28">
+      <div className="mx-3 lg:mx-28">
         <BreadCrumb title="Contact" />
         <Banner />
         <ContactType />

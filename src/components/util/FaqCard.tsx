@@ -11,7 +11,7 @@ const FaqCard: React.FC<{ ques: IQues }> = ({ ques }) => {
       tabIndex={0}
       className="collapse collapse-plus border border-base-300 bg-[#191e24] mb-3 text-gray-400"
     >
-      <div className="collapse-title text-xl font-medium">{ques.question}</div>
+      <div className="collapse-title text-md font-medium">{ques.question}</div>
       <div className="collapse-content">
         <p>{ques.answer}</p>
       </div>

@@ -1,9 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 import RootLayout from "@/components/Layouts/RootLayout";
 import Banner from "@/components/UI/Packages/Banner";
 import BreadCrumb from "@/components/util/BreadCrumb";
 import PackageCard from "@/components/util/PackageCard";
 import PackageTitle from "@/components/util/PackageTitle";
+import Image from "next/image";
 import { ReactElement, useState } from "react";
 import packageList from "../../../public/db/packages.json";
 
@@ -21,12 +21,12 @@ const PackagesPage = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="mx-28">
+      <div className="mx-6 lg:mx-28">
         <BreadCrumb title="Packages" />
         <Banner />
         <div
           role="tablist"
-          className="tabs tabs-boxed text-white tabs-lg my-10"
+          className="tabs tabs-boxed text-white tabs-sm lg:tabs-lg my-10 bg-[#191e24]"
         >
           <button
             role="tab"
@@ -72,16 +72,16 @@ const PackagesPage = () => {
           />
         )}
 
-        <div className="grid grid-cols-3 gap-2 mb-10">
-          <div className="col-span-2">
-            <div className=" grid grid-cols-2 gap-4 mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 mb-10">
+          <div className="lg:col-span-2 order-2 lg:order-1">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8">
               {filterPackage.map((packageItem, index) => (
                 <PackageCard key={index} packageItem={packageItem} />
               ))}
             </div>
           </div>
-          <div className="mt-10">
-            <img src={imgUrl} alt="image" />
+          <div className="mt-10 order-1 lg:order-2">
+            <Image width={500} height={500} src={imgUrl} alt="image" />
           </div>
         </div>
       </div>
