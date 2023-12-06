@@ -1,5 +1,5 @@
+import ProductCard from "@/components/UI/Home/ProductCard";
 import HeaderText from "@/components/util/HeaderText";
-import ProductCard from "@/components/util/ProductCard";
 
 const Products = () => {
   const productList = [

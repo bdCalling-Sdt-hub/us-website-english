@@ -46,10 +46,10 @@ const Navbar = () => {
                       <Link href="/television">Television</Link>
                     </li>
                     <li className="text-md">
-                      <a>Internet</a>
+                      <Link href="/internet">Internet</Link>
                     </li>
                     <li className="text-md">
-                      <a>Phone</a>
+                      <Link href="/phone">Phone</Link>
                     </li>
                   </ul>
                 </li>
@@ -96,10 +96,10 @@ const Navbar = () => {
                     <Link href="/television">Television</Link>
                   </li>
                   <li>
-                    <a>Internet</a>
+                    <Link href="/internet">Internet</Link>
                   </li>
                   <li>
-                    <a>Phone</a>
+                    <Link href="/phone">Phone</Link>
                   </li>
                 </ul>
               </details>

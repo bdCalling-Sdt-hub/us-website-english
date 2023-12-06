@@ -5,22 +5,22 @@ const ContactType = () => {
     {
       title: "OUR OFFICES",
       text: "7900 boulevard Taschereau A-206, Brossard, QC, Canada J4X 1C2",
-      icon: <MapPin size={60} color="#7480ff" />,
+      icon: <MapPin size={60} color="#1775fa" />,
     },
     {
       title: "PHONE",
       text: "514-800-0201, 1-855-396-2838 (Toll-free)",
-      icon: <PhoneCall size={60} color="#7480ff" />,
+      icon: <PhoneCall size={60} color="#1775fa" />,
     },
     {
       title: "FAX",
       text: "514-400-5222",
-      icon: <Mailbox size={60} color="#7480ff" />,
+      icon: <Mailbox size={60} color="#1775fa" />,
     },
     {
       title: "E-MAIL",
       text: "info@vodalink.com",
-      icon: <Mail size={60} color="#7480ff" />,
+      icon: <Mail size={60} color="#1775fa" />,
     },
   ];
   return (
@@ -32,7 +32,7 @@ const ContactType = () => {
         >
           <div className="card-body items-center text-center text-gray-400">
             <div>{item.icon}</div>
-            <h2 className="card-title">{item.title}</h2>
+            <h2 className="card-title text-white">{item.title}</h2>
             <p>{item.text}</p>
           </div>
         </div>

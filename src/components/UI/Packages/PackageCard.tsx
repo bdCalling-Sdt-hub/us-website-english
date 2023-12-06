@@ -35,7 +35,7 @@ const PackageCard: React.FC<{ packageItem: IPackage }> = ({ packageItem }) => {
             {price}
           </h1>
           <Link href="/contact">
-            <h2 className=" bg-black text-white font-bold p-3 rounded-b-lg text-center">
+            <h2 className=" bg-[#191e24] text-white font-bold p-3 rounded-b-lg text-center">
               COMMANDER
             </h2>
           </Link>

@@ -1,5 +1,5 @@
-import TvPackageCard from "@/components/util/TvPackageCard";
 import packageList from "../.../../../../../public/db/tv.json";
+import TvPackageCard from "./TvPackageCard";
 
 const TvPackage = () => {
   const { tvPackageList } = packageList;

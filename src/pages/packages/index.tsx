@@ -1,7 +1,7 @@
 import RootLayout from "@/components/Layouts/RootLayout";
 import Banner from "@/components/UI/Packages/Banner";
+import PackageCard from "@/components/UI/Packages/PackageCard";
 import BreadCrumb from "@/components/util/BreadCrumb";
-import PackageCard from "@/components/util/PackageCard";
 import PackageTitle from "@/components/util/PackageTitle";
 import Image from "next/image";
 import { ReactElement, useState } from "react";

@@ -69,7 +69,7 @@ const ContactForm = () => {
                   placeholder="Type here"
                 ></textarea>
               </label>
-              <button className="btn bg-black w-full text-white mt-8">
+              <button className="btn btn-black w-full text-white mt-8">
                 SEND
               </button>
             </form>
