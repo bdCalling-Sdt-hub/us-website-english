@@ -6,7 +6,7 @@ const nextConfig = {
   },
   server: {
     target: "server",
-    host: "192.168.10.16",
+    host: "167.71.98.150",
     port: 3000,
   },
 };

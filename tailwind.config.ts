@@ -17,7 +17,16 @@ const config: Config = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["dark"],
+    themes: [
+      {
+        myTheme: {
+          primary: "#1775fa",
+          secondary: "#191e24",
+          neutral: "#3d4451",
+        },
+      },
+      "dark",
+    ],
   },
 };
 export default config;

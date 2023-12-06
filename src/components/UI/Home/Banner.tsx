@@ -69,7 +69,7 @@ const Banner = () => {
                 </div>
                 <div className="order-1 lg:order-2">
                   <Image
-                    src="https://www.bravotelecom.com/wp-content/uploads/2023/01/tv-bravootelecom.png"
+                    src="/images/tv-bravootelecom.png"
                     alt="image"
                     width={600}
                     height={500}

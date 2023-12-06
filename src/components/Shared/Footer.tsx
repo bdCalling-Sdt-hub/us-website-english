@@ -12,30 +12,32 @@ import Icon from "../util/Icon";
 
 const Footer = () => {
   return (
-    <div className="bg-[#191e24] text-gray-400">
+    <div className="bg-secondary text-gray-400">
       <footer className="footer py-12 text-base-content container mx-auto px-3 lg:px-0">
         <nav>
           <Image src="/images/logo2.png" alt="logo" width={300} height={200} />
-          <p className="text-lg my-3">
+          <p className="text-lg my-3 text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             <br /> Neque, numquam. Lorem ipsum dolor sit amet consectetur
             adipisicing elit.
             <br /> Neque, numquam.
           </p>
-          <h1 className="text-lg font-bold">Beyond a connection</h1>
+          <h1 className="text-lg font-bold text-gray-400">
+            Beyond a connection
+          </h1>
           <div className="flex items-center gap-2">
             <Icon>
-              <Facebook />
+              <Facebook color="#e8e3e3" />
             </Icon>
             <Icon>
-              <Instagram />
+              <Instagram color="#e8e3e3" />
             </Icon>
             <Icon>
-              <Twitter />
+              <Twitter color="#e8e3e3" />
             </Icon>
           </div>
         </nav>
-        <nav>
+        <nav className="text-gray-400">
           <header className="footer-title">SITEMAP</header>
           <a className="link link-hover text-[16px]">Terms of Use</a>
           <a className="link link-hover text-[16px]">Contact</a>
@@ -46,7 +48,7 @@ const Footer = () => {
           <a className="link link-hover text-[16px]">Sitemap</a>
           <a className="link link-hover text-[16px]">Copyright</a>
         </nav>
-        <nav>
+        <nav className="text-gray-400">
           <header className="footer-title">CONTACT US</header>
           <div className="flex items-center gap-2">
             <Icon>
