@@ -41,7 +41,7 @@ const TvPackageCard: React.FC<{ data: IData }> = ({ data }) => {
         <div className="card-body  text-gray">
           <h2 className="card-title text-xl mb-2">From only</h2>
           <h1 className="text-3xl font-medium">${price}/MONTH</h1>
-          <button className="btn btn-primary mt-4">COMMANDER</button>
+          <button className="btn bg-black mt-4">COMMANDER</button>
         </div>
       </div>
     </div>

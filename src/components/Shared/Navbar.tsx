@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-primary text-white">
+    <div className="bg-[#1775fa] text-white">
       <div className="navbar container mx-auto">
         <div className="navbar-start">
           <div className="dropdown" onClick={toggleDropdown}>
@@ -117,27 +117,6 @@ const Navbar = () => {
               <a>English</a>
             </li>
           </ul>
-
-          {/* <div className="dropdown dropdown-hover">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-sm bg-[#191e24]  text-orange-600 m-1"
-            >
-              PROMO
-            </div>
-            <ul
-              tabIndex={0}
-              className="dropdown-content z-[1] menu p-2 shadow bg-[#191e24] rounded-box w-52"
-            >
-              <li>
-                <a>CURRENT PROMOTION</a>
-              </li>
-              <li>
-                <a>STUDENT PROMOTION</a>
-              </li>
-            </ul>
-          </div> */}
           <div>
             <button className="btn btn-ghost btn-circle">
               <Search />

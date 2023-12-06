@@ -12,7 +12,7 @@ const TelevisionPage = () => {
         <BreadCrumb title="Television" />
         <Banner />
         <HeaderText>
-          The most <span className="text-primary">fresh</span> TV packages on
+          The most <span className="text-[#1775fa]">fresh</span> TV packages on
           the market{" "}
         </HeaderText>
         <TvPackage />

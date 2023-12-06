@@ -1,8 +1,7 @@
 import RootLayout from "@/components/Layouts/RootLayout";
 import Banner from "@/components/UI/Home/Banner";
-import FAQ from "@/components/UI/Home/FAQ";
 import Feedback from "@/components/UI/Home/Feedback";
-import Products from "@/components/UI/Home/Products";
+import Service from "@/components/UI/Home/Service";
 import Subscribe from "@/components/UI/Home/Subscribe";
 import WhoWeAre from "@/components/UI/Home/WhoWeAre";
 import { Inter } from "next/font/google";
@@ -25,11 +24,12 @@ export default function HomePage() {
       </Head>
       <div className="container mx-auto">
         <Banner />
-        <Products />
-        <Feedback />
+        {/* <Products /> */}
+        <Service />
         <WhoWeAre />
+        <Feedback />
         <Subscribe />
-        <FAQ />
+        {/* <FAQ /> */}
       </div>
     </>
   );

@@ -13,7 +13,7 @@ const PackageCard: React.FC<{ packageItem: IPackage }> = ({ packageItem }) => {
   return (
     <div className="card bg-[#2a323c] shadow-xl p-2 h-[500px] lg:h-[450px]">
       <div className="card-body p-1 relative">
-        <h2 className="card-title w-full bg-primary p-3 rounded-t-lg text-gray-300">
+        <h2 className=" text-lg text-center w-full bg-[#1775fa] p-3 rounded-t-lg text-white">
           {title}!
         </h2>
 
@@ -35,7 +35,7 @@ const PackageCard: React.FC<{ packageItem: IPackage }> = ({ packageItem }) => {
             {price}
           </h1>
           <Link href="/contact">
-            <h2 className=" bg-primary p-3 rounded-b-lg text-center">
+            <h2 className=" bg-black text-white font-bold p-3 rounded-b-lg text-center">
               COMMANDER
             </h2>
           </Link>

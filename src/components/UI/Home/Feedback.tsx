@@ -21,7 +21,9 @@ const Feedback = () => {
 
   return (
     <div className="mx-3 lg:mx-44 mt-36">
-      <HeaderText>What you think of our services</HeaderText>
+      <HeaderText>
+        What you think of our <br /> services
+      </HeaderText>
       <Swiper
         modules={[Pagination, A11y, Autoplay, Navigation]}
         spaceBetween={20}

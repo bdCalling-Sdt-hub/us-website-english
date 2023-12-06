@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 items-center my-10 bg-[#fefefe] rounded-md pl-5">
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center my-10 bg-[#fefefe] rounded-md p-10">
       <div className="">
         <Image
           src="/images/television.png"
@@ -14,7 +14,7 @@ const Banner = () => {
         />
       </div>
       <div className="text-gray-400">
-        <div className="border-2 border-primary w-56 mb-4" />
+        <div className="border-2 border-[#1775fa] w-56 mb-4" />
         <h1 className="text-4xl font-bold text-light mb-2">TELEVISION</h1>
         <p>
           With Vodalink, have access to content from the most popular
@@ -28,11 +28,11 @@ const Banner = () => {
         </h1>
         <p>
           <Link href="/contact">
-            <button className="btn btn-primary text-white">COMMENDER</button>
+            <button className="btn bg-black text-white">COMMENDER</button>
           </Link>
         </p>
 
-        <div className="border-2 border-primary w-56 mt-4" />
+        <div className="border-2 border-[#1775fa] w-56 mt-4" />
       </div>
     </div>
   );

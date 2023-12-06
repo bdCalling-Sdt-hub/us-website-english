@@ -9,10 +9,20 @@ const SupportPage = () => {
     <div className="container mx-auto">
       <div className="mx-3 lg:mx-28">
         <BreadCrumb title="Support" />
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center my-10 bg-[#cbcecd] rounded-md pl-5 py-5">
-          <div className="space-y-5 order-2 lg:order-1">
-            <h1 className="text-4xl font-bold text-white">Support</h1>
-            <p className="text-white">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center my-10 bg-[#fefefe] rounded-md p-10">
+          <div className="">
+            <Image
+              src="/images/packages.png"
+              alt="support"
+              width={500}
+              height={500}
+              className="w-[100%] rounded-md object-cover"
+            />
+          </div>
+          <div className="space-y-5 text-center text-gray-400">
+            <div className="border-2 border-[#1775fa] w-56 mx-auto" />
+            <h1 className="text-4xl font-bold text-light">Support</h1>
+            <p className="text-light">
               This section of our website aims to answer the most frequently
               asked questions about our service, and provide support through
               direct answers and video tutorials for any difficulties you may
@@ -20,18 +30,10 @@ const SupportPage = () => {
             </p>
             <p>
               <Link href="/contact">
-                <button className="btn btn-primary text-white">CONTACT</button>
+                <button className="btn bg-black text-white">CONTACT</button>
               </Link>
             </p>
-          </div>
-          <div className="order-1 lg:order-2">
-            <Image
-              src="/images/support.jpg"
-              alt="support"
-              width={500}
-              height={500}
-              className="w-[88%] rounded-md object-cover block ml-auto"
-            />
+            <div className="border-2 border-[#1775fa] w-56 mx-auto" />
           </div>
         </div>
       </div>

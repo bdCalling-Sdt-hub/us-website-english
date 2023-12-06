@@ -33,3 +33,20 @@ body {
 .swiper-pagination {
   right: 0px !important;
 }
+
+.who {
+  position: relative;
+  z-index: 9999;
+}
+
+.who::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: rgba(12, 68, 252, 0.507);
+  border-radius: 50%;
+  position: absolute;
+  top: -80px;
+  left: 80px;
+  z-index: -99999;
+}
