@@ -1,12 +1,6 @@
 const OneTimeFees = () => {
-  const items = [
-    "Watch streaming videos",
-    "Paly video games online",
-    "Listen to or download a ton of songs",
-    "Work and study without interruptions",
-  ];
   return (
-    <div className="grid grid-cols-3 gap-8 items-center tab-content bg-base-100 border-base-300 rounded-box p-6 py-16">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center tab-content bg-base-100 border-base-300 rounded-box p-6 py-16">
       <div>
         <h1 className="text-2xl font-medium text-white mb-4">DEPARTURE FEES</h1>
         <p>

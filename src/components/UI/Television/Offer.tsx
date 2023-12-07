@@ -22,18 +22,18 @@ const Offer = () => {
         We also offer very fresh <br />{" "}
         <span className="text-[#1775fa]">themes</span>{" "}
       </HeaderText>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {tvOfferList.map((item, index) => (
           <OfferCard key={index} data={item} />
         ))}
       </div>
       <div className="card bg-gray-800 text-gray-400  mt-5">
-        <div className="card-body grid grid-cols-2">
+        <div className="card-body grid grid-cols-1 lg:grid-cols-2">
           <div>
             <h1 className="text-3xl font-medium">
               For the ultimate sports fan
             </h1>
-            <div className="flex items-center  gap-3 my-5">
+            <div className="flex items-center flex-wrap  gap-3 my-5">
               {sportsImg.map((item, index) => (
                 <div
                   key={index}

@@ -14,7 +14,7 @@ const Banner = () => {
 
   return (
     <>
-      <div className="mx-3 lg:mx-28 h-[600px] lg:h-[550px] px-8 my-10 bg-gray-800 rounded-lg">
+      <div className="mx-6 lg:mx-28 h-[650px] lg:h-[550px] px-8 my-10 bg-gray-800 rounded-lg">
         <Swiper
           direction={"vertical"}
           pagination={{

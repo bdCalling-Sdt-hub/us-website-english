@@ -21,13 +21,13 @@ const WhoWeAre = () => {
             CONTACT
           </button>
         </div>
-        <div className="who-image w-[50%]">
+        <div className="w-full lg:w-[50%] hidden lg:block">
           <Image
             src="/images/about.png"
             width={400}
             height={500}
             alt="about us"
-            className=" block mx-auto"
+            className=" mx-auto"
           />
         </div>
       </div>

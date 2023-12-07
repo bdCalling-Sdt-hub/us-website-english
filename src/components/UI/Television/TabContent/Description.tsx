@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Description = () => {
   return (
-    <div className="grid grid-cols-3 gap-2 items-center tab-content bg-base-100 border-base-300 rounded-box p-6">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 items-center mb-14 tab-content bg-base-100 border-base-300 rounded-box p-6">
       <div>
         <Image
           src="/images/about.png"

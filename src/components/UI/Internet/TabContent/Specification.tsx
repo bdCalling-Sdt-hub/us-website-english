@@ -8,7 +8,7 @@ const Specification = () => {
     "Work and study without interruptions",
   ];
   return (
-    <div className="grid grid-cols-3 gap-8 items-center tab-content bg-base-100 border-base-300 rounded-box p-6 py-12">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center tab-content bg-base-100 border-base-300 rounded-box p-6 py-12">
       <div>
         <h1 className="text-2xl font-medium text-white mb-4">CABLE INTERNET</h1>
         <p>

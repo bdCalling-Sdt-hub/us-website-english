@@ -27,9 +27,9 @@ const Service = () => {
 
   return (
     <div className=" mx-6 lg:mx-48 ">
-      <div className="grid grid-cols-2 items-center mb-14">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center mb-14">
         <div>
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-2xl lg:text-5xl font-bold">
             Services that are so
             <br /> refreshing
           </h1>

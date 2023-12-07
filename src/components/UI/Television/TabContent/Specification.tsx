@@ -20,17 +20,17 @@ const Specification = () => {
     { title: "Button to move forward and forward" },
   ];
   return (
-    <div className="grid grid-cols-4 gap-2 items-center tab-content bg-base-100 border-base-300 rounded-box p-6">
+    <div className="grid grid-cols-1 lg:grid-cols-4 gap-2 items-center tab-content bg-base-100 border-base-300 rounded-box p-6 space-y-5 lg:space-y-0">
       <div>
         <Image
           src="/images/tv-receiver1.png"
           width={300}
           height={400}
           alt="about us"
-          className=" block mx-auto"
+          className=" block lg:mx-auto"
         />
       </div>
-      <div className="mx-auto">
+      <div className="lg:mx-auto">
         {items1.map((item, index) => (
           <div className="flex items-center gap-2" key={index}>
             <Check color="#1775fa" size={15} />
@@ -44,7 +44,7 @@ const Specification = () => {
           width={100}
           height={300}
           alt="about us"
-          className=" block mx-auto"
+          className=" block lg:mx-auto"
         />
       </div>
       <div className="mx-auto">

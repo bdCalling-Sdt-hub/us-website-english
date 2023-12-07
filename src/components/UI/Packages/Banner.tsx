@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2  items-center my-10 bg-[#2a323c] rounded-md p-10 h-[460px]">
+    <div className="grid grid-cols-1 lg:grid-cols-2  items-center my-10 bg-[#2a323c] rounded-md p-10 lg:h-[460px]">
       <div className="">
         <img
           src="/images/packages.png"

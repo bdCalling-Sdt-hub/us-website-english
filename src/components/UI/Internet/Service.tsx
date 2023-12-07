@@ -32,14 +32,14 @@ const Service = () => {
       <HeaderText>
         UNLIMITED HIGH SPEED INTERNET <br /> PACKAGES
       </HeaderText>
-      <div className="grid grid-cols-3 gap-2 items-center mb-14">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 items-center mb-14">
         <div>
           <p className="text-lg">
             Our high-speed unlimited Internet plans include cable connections
             with speed margins ensuring you a fast connection at a good price.
           </p>
         </div>
-        <div className="mx-auto">
+        <div className="lg:mx-auto">
           <div className="flex items-center gap-2">
             <Check color="#1775fa" size={15} />
             <p className="text-white">Unlimited use</p>
@@ -53,7 +53,7 @@ const Service = () => {
             <p className="text-white">Router included</p>
           </div>
         </div>
-        <div className="mx-auto">
+        <div className="lg:mx-auto">
           <div className="flex items-center gap-2">
             <Check color="#1775fa" size={15} />
             <p className="text-white">Modem included</p>
