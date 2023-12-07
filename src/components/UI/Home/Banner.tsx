@@ -43,7 +43,7 @@ const Banner = () => {
                     <span className="text-6xl  text-[#1775fa]">$69</span>
                     .95/month
                   </h1>
-                  <button className="btn uppercase btn-wide btn-black mt-5 hover:bg-yellow-700 duration">
+                  <button className="btn uppercase btn-wide btn-black mt-5 ">
                     Plus d&apos;Information
                   </button>
                 </div>

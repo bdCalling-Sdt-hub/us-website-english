@@ -1,4 +1,4 @@
-import FaqCard from "@/components/UI/Home/FaqCard";
+import FaqCard from "@/components/util/FaqCard";
 import HeaderText from "@/components/util/HeaderText";
 
 const FAQ = () => {

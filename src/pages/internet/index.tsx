@@ -1,6 +1,7 @@
 import RootLayout from "@/components/Layouts/RootLayout";
 import Banner from "@/components/UI/Internet/Banner";
 import Service from "@/components/UI/Internet/Service";
+import TabSection from "@/components/UI/Internet/TabSection";
 import BreadCrumb from "@/components/util/BreadCrumb";
 import { ReactElement } from "react";
 
@@ -11,6 +12,7 @@ const InternetHomePage = () => {
         <BreadCrumb title="Internet" />
         <Banner />
         <Service />
+        <TabSection />
       </div>
     </div>
   );

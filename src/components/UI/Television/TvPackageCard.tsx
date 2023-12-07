@@ -1,5 +1,6 @@
 import { Check, Tv } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface IData {
   title: string;
@@ -28,20 +29,21 @@ const TvPackageCard: React.FC<{ data: IData }> = ({ data }) => {
           ))}
           <div className="flex items-center gap-3 mt-4">
             {images.map((item, index) => (
-              <Image
+              <div
                 key={index}
-                src={item}
-                width={50}
-                height={50}
-                alt="tv image"
-              />
+                className="bg-[#e9e9e9] w-16 h-8 flex justify-center items-center p-2 rounded-md"
+              >
+                <Image src={item} width={50} height={50} alt="tv image" />
+              </div>
             ))}
           </div>
         </div>
         <div className="card-body  text-gray">
           <h2 className="card-title text-xl mb-2">From only</h2>
           <h1 className="text-3xl font-medium">${price}/MONTH</h1>
-          <button className="btn bg-black mt-4">COMMANDER</button>
+          <Link href="/contact">
+            <button className="btn btn-black btn-wide mt-4">COMMANDER</button>
+          </Link>
         </div>
       </div>
     </div>

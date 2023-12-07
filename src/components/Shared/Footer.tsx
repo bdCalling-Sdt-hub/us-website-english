@@ -7,6 +7,7 @@ import {
   Twitter,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import Icon from "../util/Icon";
 
 const Footer = () => {
@@ -24,10 +25,18 @@ const Footer = () => {
         </nav>
         <nav>
           <header className="footer-title text-white text-lg">Services</header>
-          <a className="link link-hover text-[16px]">Packages</a>
-          <a className="link link-hover text-[16px]">Television</a>
-          <a className="link link-hover text-[16px]">Internet</a>
-          <a className="link link-hover text-[16px]">Telephone</a>
+          <Link href="/packages" className="link link-hover text-[16px]">
+            Packages
+          </Link>
+          <Link href="/television" className="link link-hover text-[16px]">
+            Television
+          </Link>
+          <Link href="/internet" className="link link-hover text-[16px]">
+            Internet
+          </Link>
+          <Link href="/phone" className="link link-hover text-[16px]">
+            Telephone
+          </Link>
         </nav>
         <nav>
           <header className="footer-title text-lg text-white">

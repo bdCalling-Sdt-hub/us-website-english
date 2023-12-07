@@ -1,8 +1,9 @@
 import RootLayout from "@/components/Layouts/RootLayout";
 import Banner from "@/components/UI/Television/Banner";
+import Offer from "@/components/UI/Television/Offer";
+import TabSection from "@/components/UI/Television/TabSection";
 import TvPackage from "@/components/UI/Television/TvPackage";
 import BreadCrumb from "@/components/util/BreadCrumb";
-import HeaderText from "@/components/util/HeaderText";
 import { ReactElement } from "react";
 
 const TelevisionPage = () => {
@@ -11,11 +12,9 @@ const TelevisionPage = () => {
       <div className="mx-6 lg:mx-28">
         <BreadCrumb title="Television" />
         <Banner />
-        <HeaderText>
-          The most <span className="text-[#1775fa]">fresh</span> TV packages{" "}
-          <br /> on the market{" "}
-        </HeaderText>
         <TvPackage />
+        <Offer />
+        <TabSection />
       </div>
     </div>
   );

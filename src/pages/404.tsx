@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useRouter } from "next/router";
 
 const NotFound = () => {
@@ -6,14 +5,23 @@ const NotFound = () => {
 
   setTimeout(() => {
     router.push("/");
-  }, 6000);
+  }, 5000);
   return (
-    <div className="  flex items-center justify-center h-screen">
+    <div className="  flex  justify-center  mt-28">
       <div>
-        <Image src="/images/4041.png" width={600} height={600} alt="" />
-        <h1 className="text-3xl font-medium text-center">Page not found</h1>
-        <p className="text-center text-xl mt-2">
-          Dear, how many eggs here have? Could you count?
+        <img
+          src="/images/404.png"
+          alt=""
+          className="mx-auto rounded-md object-cover"
+        />
+        <h1 className="text-8xl mt-5 font-extrabold  text-center text-red-500">
+          404
+        </h1>
+        <h1 className="text-4xl mt-5 font-medium text-center text-light">
+          Page not found
+        </h1>
+        <p className="text-center text-xl mt-2 text-white">
+          Dear,how many days in one week? and just wait 5 seconds
         </p>
       </div>
     </div>

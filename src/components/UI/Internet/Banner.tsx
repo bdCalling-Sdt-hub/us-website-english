@@ -1,16 +1,13 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const Banner = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center my-10 bg-[#2a323c] rounded-md p-10">
       <div className="">
-        <Image
+        <img
           src="/images/internet.png"
           alt="support"
-          width={500}
-          height={500}
-          className="rounded-md"
+          className="w-[50%] mx-auto rounded-md object-cover"
         />
       </div>
       <div className="text-gray-400">
@@ -28,7 +25,7 @@ const Banner = () => {
         </h1>
         <p>
           <Link href="/contact">
-            <button className="btn btn-black btn-wide text-white hover:bg-yellow-600 duration">
+            <button className="btn btn-black btn-wide text-white">
               COMMENDER
             </button>
           </Link>

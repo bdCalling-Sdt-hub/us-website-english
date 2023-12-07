@@ -1,6 +1,5 @@
 import RootLayout from "@/components/Layouts/RootLayout";
 import BreadCrumb from "@/components/util/BreadCrumb";
-import Image from "next/image";
 import Link from "next/link";
 import { ReactElement } from "react";
 
@@ -11,12 +10,10 @@ const SupportPage = () => {
         <BreadCrumb title="Support" />
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center my-10 bg-[#2a323c] rounded-md p-10">
           <div className="">
-            <Image
-              src="/images/packages.png"
+            <img
+              src="/images/support.png"
               alt="support"
-              width={500}
-              height={500}
-              className="w-[100%] rounded-md object-cover"
+              className="w-[50%] mx-auto rounded-md object-cover"
             />
           </div>
           <div className="space-y-5  text-gray-400">
@@ -30,7 +27,7 @@ const SupportPage = () => {
             </p>
             <p>
               <Link href="/contact">
-                <button className="btn btn-black btn-wide text-white hover:bg-yellow-600 duration">
+                <button className="btn btn-black btn-wide text-white">
                   CONTACT
                 </button>
               </Link>

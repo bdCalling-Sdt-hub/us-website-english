@@ -1,15 +1,11 @@
-import Image from "next/image";
-
 const Banner = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 items-center my-10 bg-[#2a323c] rounded-md p-10">
       <div className="">
-        <Image
+        <img
           src="/images/contact.png"
           alt="support"
-          width={500}
-          height={500}
-          className=" rounded-md"
+          className="mx-auto rounded-md object-cover"
         />
       </div>
       <div className="space-y-5 text-center text-gray-400">

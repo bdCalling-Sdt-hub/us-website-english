@@ -31,14 +31,18 @@ const PackagesPage = () => {
           <button
             role="tab"
             onClick={() => setTitle("tv-internet")}
-            className={`tab ${title === "tv-internet" ? "tab-active" : ""}`}
+            className={`tab ${
+              title === "tv-internet" ? "bg-[#1775fa] text-white" : ""
+            }`}
           >
             TV + Internet
           </button>
           <button
             role="tab"
             onClick={() => setTitle("internet-phone")}
-            className={`tab ${title === "internet-phone" ? "tab-active" : ""}`}
+            className={`tab ${
+              title === "internet-phone" ? "bg-[#1775fa] text-white" : ""
+            }`}
           >
             Internet + Phone
           </button>
@@ -46,7 +50,7 @@ const PackagesPage = () => {
             role="tab"
             onClick={() => setTitle("tv-internet-phone")}
             className={`tab ${
-              title === "tv-internet-phone" ? "tab-active" : ""
+              title === "tv-internet-phone" ? "bg-[#1775fa] text-white" : ""
             }`}
           >
             TV + Internet + Phone
