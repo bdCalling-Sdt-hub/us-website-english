@@ -23,7 +23,7 @@ const Specification = () => {
     <div className="grid grid-cols-1 lg:grid-cols-4 gap-2 items-center tab-content bg-base-100 border-base-300 rounded-box p-6 space-y-5 lg:space-y-0">
       <div>
         <Image
-          src="/images/tv-receiver1.png"
+          src="/images/remote1.png"
           width={300}
           height={400}
           alt="about us"
@@ -40,7 +40,7 @@ const Specification = () => {
       </div>
       <div>
         <Image
-          src="/images/tv-receiver2.png"
+          src="/images/remote2.png"
           width={100}
           height={300}
           alt="about us"
