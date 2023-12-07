@@ -1,31 +1,10 @@
 import HeaderText from "@/components/util/HeaderText";
 import { Check } from "lucide-react";
+import Link from "next/link";
+import serviceList from "../../../../public/db/internet.json";
 
 const Service = () => {
-  const items = [
-    {
-      title: "Unlimited Internet",
-      mbps: 15,
-      price: 54,
-      recommand: "Recommended for single users and small families.",
-      tag: "",
-    },
-    {
-      title: "Unlimited Internet",
-      mbps: 30,
-      price: 59.95,
-      recommand:
-        "Recommended for digital television viewing and medium-sized families.",
-      tag: "Bargain",
-    },
-    {
-      title: "Unlimited Internet",
-      mbps: 60,
-      price: 64.95,
-      recommand: "Recommended for gamers, heavy users and large families.",
-      tag: "",
-    },
-  ];
+  const { internetServices } = serviceList;
 
   return (
     <div className="mx-3 lg:mx-28">
@@ -69,7 +48,7 @@ const Service = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-14">
-        {items.map((item, index) => (
+        {internetServices.map((item, index) => (
           <div
             className="card bg-[#2a323c] text-neutral-content z-10"
             key={index}
@@ -92,9 +71,11 @@ const Service = () => {
                 <span className="text-4xl  text-[#767d86]">${item.price}</span>
                 .95/month
               </h1>
-              <button className="btn btn-wide btn-black uppercase hover:bg-gray-500 duration my-3">
-                Plus d&apos;Information
-              </button>
+              <Link href={`/internet/${item.id}`}>
+                <button className="btn btn-wide btn-black uppercase hover:bg-gray-500 duration my-3">
+                  Plus d&apos;Information
+                </button>
+              </Link>
               <p className="my-2">{item.recommand}</p>
             </div>
           </div>

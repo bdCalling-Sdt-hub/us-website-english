@@ -1,12 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const WhoWeAre = () => {
   return (
-    <div className="mx-3 lg:mx-44 mt-56">
+    <div className="mx-3 lg:mx-44 mt-32">
       <div className="lg:flex items-center gap-5">
         <div className="space-y-8 lg:w-[50%] text-gray-400">
-          <h1 className="text-4xl font-bold who">Who are we ?</h1>
+          <h1 className="text-4xl font-bold">Who are we ?</h1>
           <p className="text-xl">
             Founded in 2004, Vodalink is a Montreal-based company that offers
             telecommunications services around the world.
@@ -25,13 +24,7 @@ const WhoWeAre = () => {
           </Link>
         </div>
         <div className="w-full lg:w-[50%] hidden lg:block">
-          <Image
-            src="/images/about.png"
-            width={400}
-            height={500}
-            alt="about us"
-            className=" mx-auto"
-          />
+          <img src="/images/about.png" alt="about us" className=" mx-auto" />
         </div>
       </div>
     </div>
