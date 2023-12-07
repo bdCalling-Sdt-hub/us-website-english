@@ -1,4 +1,5 @@
 import { ArrowDownUp, PhoneCall, Tv } from "lucide-react";
+import Link from "next/link";
 
 const Service = () => {
   const items = [
@@ -40,9 +41,11 @@ const Service = () => {
             Are you hungry for reliable, fast and cost-effective TV, Internet
             and phone service? Place your order now!
           </p>
-          <button className="btn btn-wide btn-black uppercase hover:bg-gray-500 duration">
-            Commander
-          </button>
+          <Link href="/contact">
+            <button className="btn btn-wide btn-black uppercase mt-5 hover:bg-gray-500 duration">
+              Commander
+            </button>
+          </Link>
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">

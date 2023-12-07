@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const WhoWeAre = () => {
   return (
@@ -17,9 +18,11 @@ const WhoWeAre = () => {
             Quebec City, Toronto, Ottawa, Longueuil, Laval, Sherbrooke and many
             others across Canada and the world.
           </p>
-          <button className="btn uppercase btn-wide btn-black mt-5 hover:bg-gray-500 duration">
-            CONTACT
-          </button>
+          <Link href="/contact">
+            <button className="btn uppercase btn-wide btn-black mt-5 hover:bg-gray-500 duration">
+              CONTACT
+            </button>
+          </Link>
         </div>
         <div className="w-full lg:w-[50%] hidden lg:block">
           <Image
