@@ -1,16 +1,42 @@
 import {
   Facebook,
-  Instagram,
   Mail,
   MapPinned,
   Phone,
   Twitter,
+  Youtube,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "../util/Icon";
 
 const Footer = () => {
+  const socialItems = [
+    {
+      icon: <Facebook color="#fff" />,
+      link: "https://www.facebook.com/VodalinkTelecom",
+      bgColor: "bg-blue-500",
+      title: "fa",
+    },
+    {
+      icon: <Youtube color="#fff" />,
+      link: "https://www.youtube.com/channel/UCjmm1bRMIWIGXPW17fnBd8Q",
+      bgColor: "bg-[#ff0000]",
+      title: "yo",
+    },
+    {
+      icon: <Twitter color="#fff" />,
+      link: "https://twitter.com/Vodalink",
+      bgColor: "bg-[#1da1f2]",
+      title: "tw",
+    },
+    {
+      icon: <Mail color="#fff" />,
+      link: "info@vodalink.com",
+      bgColor: "bg-[#fbbc04]",
+      title: "ma",
+    },
+  ];
   return (
     <div className="bg-[#191e24] text-gray-400">
       <footer className="footer py-20 text-base-content container mx-auto px-3 lg:px-0">
@@ -75,15 +101,20 @@ const Footer = () => {
             Social Networks
           </header>
           <div className="flex items-center gap-2">
-            <Icon>
-              <Facebook />
-            </Icon>
-            <Icon>
-              <Instagram />
-            </Icon>
-            <Icon>
-              <Twitter />
-            </Icon>
+            {socialItems.map((item, index) => {
+              const uri =
+                item.title === "ma" ? `mailto:${item.link}` : item.link;
+              return (
+                <a
+                  key={index}
+                  href={uri}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon>{item.icon}</Icon>
+                </a>
+              );
+            })}
           </div>
         </nav>
       </footer>
