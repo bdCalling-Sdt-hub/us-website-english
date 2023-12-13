@@ -9,6 +9,7 @@ const Service = () => {
         "High definition television service with more than 150 channels.",
       icon: <Tv size={40} />,
       btnContent: "View channel list",
+      link: "/television",
     },
     {
       title: "UNLIMITED INTERNET",
@@ -16,6 +17,7 @@ const Service = () => {
         "High speed Internet service with completely unlimited usage",
       icon: <ArrowDownUp size={40} />,
       btnContent: "Choose speed",
+      link: "/internet",
     },
     {
       title: "HOME PHONE",
@@ -23,6 +25,7 @@ const Service = () => {
         "Residential telephony covering the vast region of Canada, United States.",
       icon: <PhoneCall size={40} />,
       btnContent: "Choose Package",
+      link: "/phone",
     },
   ];
 
@@ -60,9 +63,11 @@ const Service = () => {
               </div>
               <h2 className="card-title">{item.title}</h2>
               <p className="my-2">{item.description}</p>
-              <button className="btn btn-wide btn-black uppercase hover:bg-gray-500 duration">
-                {item.btnContent}
-              </button>
+              <Link href={item.link}>
+                <button className="btn btn-wide btn-black uppercase hover:bg-gray-500 duration">
+                  {item.btnContent}
+                </button>
+              </Link>
             </div>
           </div>
         ))}

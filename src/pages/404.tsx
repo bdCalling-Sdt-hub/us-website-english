@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
@@ -7,7 +6,7 @@ const NotFound = () => {
   useEffect(() => {
     setTimeout(() => {
       router.push("/");
-    }, 5000);
+    }, 3000);
   }, [router]);
   return (
     <div className="  flex  justify-center  mt-28">
@@ -23,15 +22,13 @@ const NotFound = () => {
         <h1 className="text-4xl mt-5 font-medium text-center text-light">
           Page not found
         </h1>
-        <p className="text-center text-xl mt-2 text-white">
-          Dear,how many days in one week? and just wait 5 seconds
-        </p>
-        <p className="text-center mt-5">
+
+        {/* <p className="text-center mt-5">
           {" "}
           <Link href="/">
             <button className="btn btn-black btn-wide">GO BACK</button>
           </Link>
-        </p>
+        </p> */}
       </div>
     </div>
   );

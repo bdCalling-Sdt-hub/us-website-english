@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import Image from "next/image";
+import Link from "next/link";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -43,9 +44,11 @@ const Banner = () => {
                     <span className="text-6xl  text-[#1775fa]">$69</span>
                     .95/month
                   </h1>
-                  <button className="btn uppercase btn-wide btn-black mt-5 ">
-                    Plus d&apos;Information
-                  </button>
+                  <Link href="/television">
+                    <button className="btn uppercase btn-wide btn-black mt-5 ">
+                      Plus d&apos;Information
+                    </button>
+                  </Link>
                 </div>
                 <div className="order-1 lg:order-2">
                   <Image
