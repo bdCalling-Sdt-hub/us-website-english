@@ -2,7 +2,6 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import Image from "next/image";
 import Link from "next/link";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,6 +11,31 @@ const Banner = () => {
     width: "100%",
     height: "100%",
   };
+
+  const bannerContent = [
+    {
+      title: "Television",
+      description: "The best content Tv can give you",
+      price: "69",
+      image: "/images/bannerTv.png",
+      link: "television",
+    },
+    {
+      title: "Internet",
+      description:
+        "High speed Internet service with completely unlimited usage",
+      price: "59",
+      image: "/images/phone.png",
+      link: "internet",
+    },
+    {
+      title: "Phone",
+      description: "Unlimited calls anywhere in Canada",
+      price: "6",
+      image: "/images/phone.png",
+      link: "phone",
+    },
+  ];
 
   return (
     <>
@@ -28,35 +52,32 @@ const Banner = () => {
           modules={[Pagination, Autoplay]}
           style={contentStyle}
         >
-          {[...Array(4)].map((item, index) => (
+          {bannerContent.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
                 <div className="order-2 lg:order-1">
                   <h1 className="text-5xl font-medium mb-2 text-gray-400">
-                    Television & Internet
+                    {item.title}
                   </h1>
                   <h2 className="text-2xl font-bold text-gray-400">
-                    The best content TV can give you
+                    {item.description}
                   </h2>
 
                   <p className="text-md font-medium mt-5">From only</p>
                   <h1 className="font-bold text-light mb-4">
-                    <span className="text-6xl  text-[#1775fa]">$69</span>
+                    <span className="text-6xl  text-[#1775fa]">
+                      ${item.price}
+                    </span>
                     .95/month
                   </h1>
-                  <Link href="/television">
+                  <Link href={`/${item.link}`}>
                     <button className="btn uppercase btn-wide btn-black mt-5 ">
                       Plus d&apos;Information
                     </button>
                   </Link>
                 </div>
                 <div className="order-1 lg:order-2">
-                  <Image
-                    src="https://www.bravotelecom.com/wp-content/uploads/2023/01/tv-bravootelecom.png"
-                    alt="image"
-                    width={600}
-                    height={500}
-                  />
+                  <img src={item.image} alt="image" className="w-full" />
                 </div>
               </div>
             </SwiperSlide>

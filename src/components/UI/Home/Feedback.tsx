@@ -1,5 +1,4 @@
 import HeaderText from "@/components/util/HeaderText";
-import Image from "next/image";
 import "swiper/css";
 import { A11y, Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,7 +21,8 @@ const Feedback = () => {
   return (
     <div className="mx-3 lg:mx-44 mt-36">
       <HeaderText>
-        What you think of our <br /> services
+        Our Happy clients <br />
+        feedback
       </HeaderText>
       <Swiper
         modules={[Pagination, A11y, Autoplay, Navigation]}
@@ -44,13 +44,11 @@ const Feedback = () => {
         {feedbacks.map((feedback, index) => (
           <SwiperSlide key={index} className="mt-16">
             <div className="card shadow p-10 rounded-md  relative flex justify-center h-[340px] text-center bg-slate-700">
-              <div className="absolute -top-12 bg-slate-700 p-1 shadow rounded-full">
-                <Image
-                  src={feedback?.image}
-                  className="w-20 h-20 rounded-full"
+              <div className="absolute -top-10 bg-slate-700 p-1 shadow rounded-full">
+                <img
+                  src="/images/quote.png"
+                  className="w-16 h-16 rounded-full"
                   alt=""
-                  width={200}
-                  height={200}
                 />
               </div>
               <div>

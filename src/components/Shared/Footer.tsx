@@ -43,10 +43,9 @@ const Footer = () => {
         <nav>
           <Image src="/images/logo2.png" alt="logo" width={300} height={200} />
           <p className="text-lg my-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            <br /> Neque, numquam. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit.
-            <br /> Neque, numquam.
+            Thirsting for an affordable, fast and reliable Television, <br />
+            Internet and Home Phone service? You&#39;ve come <br />
+            to the right spot!
           </p>
         </nav>
         <nav>
