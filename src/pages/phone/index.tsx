@@ -1,5 +1,5 @@
 import RootLayout from "@/components/Layouts/RootLayout";
-import BannerDetail from "@/components/Phone/BannerDetail";
+import BannerDetail from "@/components/UI/Phone/BannerDetail";
 import BreadCrumb from "@/components/util/BreadCrumb";
 import { ReactElement } from "react";
 
