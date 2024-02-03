@@ -25,21 +25,21 @@ const Banner = () => {
       description:
         "High speed Internet service with completely unlimited usage",
       price: "59",
-      image: "/images/phone.png",
+      image: "/images/bannerLap.png",
       link: "internet",
     },
     {
       title: "Phone",
       description: "Unlimited calls anywhere in Canada",
       price: "6",
-      image: "/images/phone.png",
+      image: "/images/bannerMobile1.png",
       link: "phone",
     },
   ];
 
   return (
     <>
-      <div className="mx-6 lg:mx-28 h-[650px] lg:h-[550px] px-8 my-10 bg-gray-800 rounded-lg">
+      <div className="mx-6 lg:mx-28 h-[650px] lg:h-[550px] px-8 flex justify-center my-10 bg-gray-800 rounded-lg">
         <Swiper
           direction={"vertical"}
           pagination={{
@@ -76,7 +76,7 @@ const Banner = () => {
                     </button>
                   </Link>
                 </div>
-                <div className="order-1 lg:order-2">
+                <div className="order-1 lg:order-2 pt-10">
                   <img src={item.image} alt="image" className="w-full" />
                 </div>
               </div>
